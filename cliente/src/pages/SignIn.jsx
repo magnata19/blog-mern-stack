@@ -10,8 +10,9 @@ const SignIn = () => {
 
   const [formData, setFormData] = useState({});
 
-  const {loading, error: errorMessage} = useSelector(state => state.user);
+  const {loading, error: errorMessage, currentUser} = useSelector(state => state.user);
 
+  console.log(currentUser)
   const dispatch = useDispatch();
 
   const navigate = useNavigate();
