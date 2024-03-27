@@ -23,7 +23,7 @@ const Dashboard = () => {
       <DashSidebar />
       </div>
       {/* PROFILE */}
-      <div>
+      <div className="max-w-lg mx-auto p-3 w-full">
         {tab === 'profile' && <DashProfile />}
       </div>
     </div>
